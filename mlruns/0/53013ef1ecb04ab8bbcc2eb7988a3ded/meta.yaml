@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/53013ef1ecb04ab8bbcc2eb7988a3ded/artifacts
+end_time: 1721570814397
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 53013ef1ecb04ab8bbcc2eb7988a3ded
+run_name: agreeable-zebra-128
+run_uuid: 53013ef1ecb04ab8bbcc2eb7988a3ded
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721570814387
+status: 4
+tags: []
+user_id: ayazulhaq

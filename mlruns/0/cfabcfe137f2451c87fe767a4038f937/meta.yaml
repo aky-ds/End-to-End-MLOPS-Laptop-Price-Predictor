@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/cfabcfe137f2451c87fe767a4038f937/artifacts
+end_time: 1721570712845
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cfabcfe137f2451c87fe767a4038f937
+run_name: traveling-swan-759
+run_uuid: cfabcfe137f2451c87fe767a4038f937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721570712834
+status: 4
+tags: []
+user_id: ayazulhaq

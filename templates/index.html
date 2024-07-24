@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title> Laptop Price Predictor</title>
+        <body>
+
+
+            <form action="{{url_for('predict_datapoint')}}" method="POST">
+                <div class="form-group">
+                    <label for="brand">brand:</label>
+                    <select id="brand" name="brand">
+                      <option value="ASUS">ASUS</option>
+                      <option value="DELL">DELL</option>
+                      <option value="LENOVO">LENOVO</option>
+                      <option value="HP">HP</option>
+                      <option value="acer">acer</option>
+                      <option value="MSI">MSI</option>
+                      <option value="Apple">Apple</option>
+                      <option value="Avita">Avita</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="processor_brand">Processor_brand</label>
+                    <select id="processor_brand" name="processor_brand">
+                      <option value="INTEL">INTEL</option>
+                      <option value="AMD">AMD</option>
+                      <option value="M1">M1</option>
+    
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="processor_name">Processor_name:</label>
+                    <select id="processor_name" name="processor_name">
+                      <option value="Core i5">Core i5</option>
+                      <option value="Core i3">Core i3</option>
+                      <option value="Core i7">Core i7</option>
+                      <option value="Ryzen 5">Ryzen 5</option>
+                      <option value="Ryzen 7">Ryzen 7</option>
+                      <option value="Ryzen 3">Ryzen 3</option>
+                      <option value="Ryzen 9">Ryzen 9</option>
+                      <option value="Celeron Dual">Celeron Dual</option>
+                      <option value="M1">M1</option>
+                      <option value="Pentium Quad">Pentium Quad</option>
+                      <option value="Core i9">Core i9</option>
+                    </select>
+                  </div>
+                 
+
+                  <div class='form-group'>
+                    <label for='ram_gb'>RAM:</label>
+                    <input type='text' id='ram' name='ram_gb' placeholder='Enter RAM (in GB)' required>
+
+                  </div>
+
+                  <div class='form-group'>
+                    <label for='processor_gnrtn'>Processor_Gen</label>
+                    <input type='text' id='processor_gnrtn' name='processor_gnrtn' placeholder='Enter the generation' required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ram_type">Ram Type</label>
+                        <select id="ram_type" name="ram_type">
+                          <option value="DDR4">DDR4</option>
+                          <option value="LPDDR4X">LPDDR4X</option>
+                          <option value="LPDDR4">LPDDR4</option>
+                          <option value="DDR5">DDR5</option>
+                          <option value="DDR3">DDR3</option>
+        
+                        </select>
+                      </div>
+
+                      <div class='form-group'>
+                        <label for='ssd'>SSD</label>
+                        <input type='text' id='ssd' name='ssd' placeholder='Enter the ssd size' required>
+                        </div>
+                        <div class='form-group'>
+                            <label for='hdd'>HDD</label>
+                            <input type='text' id='hdd' name='hdd' placeholder='Enter the size of hdd' required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="os">OS</label>
+                                <select id="os" name="os">
+                                  <option value="Windows">DDR4</option>
+                                  <option value="Mac">Mac</option>
+                                  <option value="DOS">DOS</option>
+        
+                                </select>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label for="os_bit">OS bit</label>
+                                <select id="os_bit" name="os_bit">
+                                  <option value="64-bit">64-bit</option>
+                                  <option value="32-bit">32-bit</option>
+        
+                                </select>
+                              </div>
+
+
+                              <div class='form-group'>
+                                <label for='graphic_card_gb'>Processor_in_GB</label>
+                                <input type='text' id='graphic_card_gb' name='graphic_card_gb' placeholder='Enter size of Graphics Card' required>
+            
+                              </div>
+                              <div class="form-group">
+                                <label for="weight">Weight</label>
+                                <select id="weight" name="weight">
+                                  <option value="Casual">Casual</option>
+                                  <option value="ThinNlight">ThinNlight</option>
+                                  <option value="Gaming">Gaming</option>
+                                </select>
+                              </div>
+
+                              <div class='form-group'>
+                                <label for='warranty'>Warranty</label>
+                                <input type='text' id='warranty' name='warranty' placeholder='Enter size of Years of Warranty' required>
+            
+                              </div>
+
+                              <div class="form-group">
+                                <label for="Touchscreen">Touchscreen</label>
+                                <select id="Touchscreen" name="Touchscreen">
+                                  <option value="No">No</option>
+                                  <option value="Yes">Yes</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="msoffice">Msoffice</label>
+                                <select id="msoffice" name="msoffice">
+                                  <option value="No">No</option>
+                                  <option value="Yes">Yes</option>
+                                </select>
+                              </div>
+                            
+
+                              <div class='form-group'>
+                                <label for='rating'>Rating</label>
+                                <input type='text' id='rating' name='rating' placeholder='Enter the rating' required>
+                            
+            
+                              </div>
+
+                              <div class='form-group'>
+                                <label for='Number of Ratings'>Rating</label>
+                                <input type='text' id='Number of Ratings' name='Number of Ratings' placeholder='Number of Ratings' required>
+                            
+                            
+            
+                              </div>
+
+                              <div class='form-group'>
+                                <label for='Number of Reviews'>Rating</label>
+                                <input type='text' id='Number of Reviews' name='Number of Reviews' placeholder='Number of Reviews' required>
+                            
+                            
+            
+                              </div>
+
+
+                              <div style="clear:both;"></div>
+                              <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+
+
+    
+    </head>
+
+
+</html>

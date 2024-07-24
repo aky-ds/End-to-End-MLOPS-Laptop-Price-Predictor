@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/30bf29718b144952bd597e5294466bca/artifacts
+end_time: 1721570829184
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30bf29718b144952bd597e5294466bca
+run_name: gaudy-smelt-584
+run_uuid: 30bf29718b144952bd597e5294466bca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721570829172
+status: 4
+tags: []
+user_id: ayazulhaq

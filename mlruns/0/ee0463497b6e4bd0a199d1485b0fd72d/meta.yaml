@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/ee0463497b6e4bd0a199d1485b0fd72d/artifacts
+end_time: 1721653646583
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ee0463497b6e4bd0a199d1485b0fd72d
+run_name: dapper-crow-205
+run_uuid: ee0463497b6e4bd0a199d1485b0fd72d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721653643373
+status: 3
+tags: []
+user_id: ayazulhaq

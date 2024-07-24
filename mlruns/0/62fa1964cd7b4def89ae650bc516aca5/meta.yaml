@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/62fa1964cd7b4def89ae650bc516aca5/artifacts
+end_time: 1721570894822
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 62fa1964cd7b4def89ae650bc516aca5
+run_name: nervous-fish-282
+run_uuid: 62fa1964cd7b4def89ae650bc516aca5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721570894803
+status: 4
+tags: []
+user_id: ayazulhaq

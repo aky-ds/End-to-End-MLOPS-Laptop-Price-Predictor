@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ayazulhaq/Desktop/Mlops1/mlruns/0/b992ab9ff0f0482993208f7a55b927e2/artifacts
+end_time: 1721635022677
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b992ab9ff0f0482993208f7a55b927e2
+run_name: intelligent-asp-798
+run_uuid: b992ab9ff0f0482993208f7a55b927e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721635019727
+status: 3
+tags: []
+user_id: ayazulhaq

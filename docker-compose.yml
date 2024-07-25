@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Adjust if your Dockerfile is named differently or located in a subdirectory
+    image: ${IMAGE_NAME}  # Define your image name
+    container_name: Laptop-price-predictor  # Specify container name
+    ports:
+      - "8080:8080"  # Map container port 8080 to host port 8080

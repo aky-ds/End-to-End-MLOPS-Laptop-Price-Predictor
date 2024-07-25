@@ -5,6 +5,7 @@ from src.exceptions.exception import CustomException
 from dataclasses import dataclass
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import sys
 @dataclass
 
 class DataIngestionConfig:
@@ -19,7 +20,7 @@ class DataIngestion:
     def instatiate_dataconfig(self):
         try:
          logging.info('Data Divisin have been instatiated')
-         df=pd.read_csv('C:/Users/ayazulhaq/Desktop/Data.csv')
+         df=pd.read_csv('C:/Users/admin/Desktop/Data.csv')
          os.makedirs(os.path.dirname(os.path.join(self.dataconfig.raw_data_path)), exist_ok=True)
         
          df.to_csv(self.dataconfig.raw_data_path,index=False)
@@ -38,7 +39,7 @@ class DataIngestion:
         
          return self.dataconfig.train_data_path,self.dataconfig.test_data_path
         except Exception as e:
-            raise CustomException(e)
+            raise CustomException(e,sys)
     
     
 if __name__ == '__main__':

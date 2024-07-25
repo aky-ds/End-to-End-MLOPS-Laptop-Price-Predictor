@@ -11,4 +11,5 @@ tox>=3.25.1
 black>=22.8.0
 scikit-learn
 mlflow
+apache-airflow
 -e .

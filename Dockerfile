@@ -1,40 +1,34 @@
-# Use the official Python image from Docker Hub
-FROM python:3.9-slim-buster
+# Use a more specific base image if possible
+FROM python:3.9-slim-buster-slim
 
-# Switch to root user to perform installation tasks
-USER root
+# Create a non-root user
+RUN adduser --disabled-password airflow
 
-# Create a directory for your application
-RUN mkdir /app
+# Set the working directory
+WORKDIR /app
 
-# Copy all files from your current directory to /app in the container
-COPY . /app/
+# Copy requirements file and install dependencies
+COPY requirements_dev.txt requirements_dev.txt
+RUN pip install --no-cache-dir -r requirements_dir.txt
 
-# Set the working directory to /app/
-WORKDIR /app/
 
-# Install dependencies from requirements_dev.txt
-RUN pip install -r requirements_dev.txt
+# Set environment variables
+ENV AIRFLOW_HOME /app/airflow
+ENV AIRFLOW_CORE_DAGBAG_IMPORT_TIMEOUT 1000
+ENV AIRFLOW_CORE_ENABLE_XCOM_PICKLING True
 
-RUN pip install --upgrade pendulum
-
-# Set environment variables for Airflow
-ENV AIRFLOW_HOME='/app/airflow'
-ENV AIRFLOW_CORE_DAGBAG_IMPORT_TIMEOUT=1000
-ENV AIRFLOW_CORE_ENABLE_XCOM_PICKLING=True
-
-# Initialize the Airflow database
+# Create Airflow directory and initialize database
+RUN airflow init
 RUN airflow db init
 
 # Create an Airflow admin user (replace with your actual user details)
 RUN airflow users create -e www.ayazkhan.com.21@gmail.com -f ayazulhaq -l yousafzi -p admin -r admin -u
 
-# Make start.sh executable
-RUN chmod 777 start.sh
+# Make start.sh executable (if needed)
+RUN chmod +x start.sh
 
-# Update packages in the base image
-RUN apt-get update -y
+# Switch to the airflow user
+USER airflow
 
-# Set the default entrypoint and command for the container
-ENTRYPOINT [ "/bin/sh" ]
+# Command to start your application
 CMD ["start.sh"]
